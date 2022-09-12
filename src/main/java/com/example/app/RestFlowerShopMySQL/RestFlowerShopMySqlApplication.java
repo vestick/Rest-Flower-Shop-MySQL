@@ -8,6 +8,7 @@ public class RestFlowerShopMySqlApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestFlowerShopMySqlApplication.class, args);
+		System.out.println("App started");
 	}
 
 }
