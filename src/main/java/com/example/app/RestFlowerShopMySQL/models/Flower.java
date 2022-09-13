@@ -6,12 +6,20 @@ import javax.persistence.*;
 
 @Getter
 @Setter
-@Builder
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 @Table(name = "flowers")
 public class Flower {
+
+    public Flower() {
+    }
+
+    public Flower(int id, String name, String photo, String description, float price) {
+        this.id = id;
+        this.name = name;
+        this.photo = photo;
+        this.description = description;
+        this.price = price;
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
