@@ -1,0 +1,17 @@
+Name DB: flower_shop
+Name table: flowers
+
+---ADD TABLE QUERY---
+
+CREATE TABLE flowers
+( id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR(30) NOT NULL,
+  photo VARCHAR(55),
+  description VARCHAR(300),
+  price FLOAT,
+  CONSTRAINT flowers_pk PRIMARY KEY (id)
+);
+
+---ADD OBJECT QUERY---
+
+INSERT INTO `flowers` (`id`, `name`, `photo`, `description`, `price`) VALUES (NULL, 'name_flower', 'name_photo.format', 'your_description', '0');
